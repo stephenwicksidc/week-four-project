@@ -1,0 +1,63 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js">
+    </head>
+    <body>
+        <div id="mainContainer">
+            <h1>Steve's Music Site</h1>
+            <br><br>
+            <div id="playerDiv">
+                <audio class="music-player" controls="controls">
+                    <source src="" type="audio/ogg">
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        <hr>
+            <div id="searchDiv">
+                <form class ="search-form" onsubmit="searchMusic()">
+                    <input type="text" id="searchBox" name="search" value="" placeholder="Search Artist">
+                    <button id="searchButton" 
+                    value="">Submit</button>
+                </form>
+            </div>
+        <hr>
+            <h2>Search Results</h2>
+            <div class="results" id="resultsDiv">
+                <table>
+                    <tr id="rowOne">
+                        <td id="artistOne">
+                        </td>
+                        <td id="artistTwo">
+                        </td>
+                        <td id="artistThree">
+                        </td>
+                        <td id="artistFour">
+                        </td>
+                        <td id="artistFive">
+                        </td>
+                    </tr>
+                    <tr id="rowTwo">
+                        <td id="artistSix">
+                        </td>
+                        <td id="artistSeven">
+                        </td>
+                        <td id="artistEight">
+                        </td>
+                        <td id="artistNine">
+                        </td>
+                        <td id="artistTen">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>
